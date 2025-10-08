@@ -1,0 +1,4794 @@
+{
+  "dataset": "FCE",
+  "original_file": "/Users/yuangao/babyLM/data/fce_errant_bliss/Dutch.json",
+  "description": "Single-edit pairs with random foils from FCE",
+  "version": "single_edit_with_random_foils_v1",
+  "original_pairs_count": 43,
+  "single_edit_pairs_count": 113,
+  "pairs_with_foils_count": 113,
+  "foil_success_count": 59,
+  "foil_success_rate": 0.5221238938053098,
+  "pairs": [
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "First of all I would like to travel in July because I already made an arrangement with my boss about my free days.",
+      "sentence_good": "First of all I would like to travel in July because I have already made an arrangement with my boss about my free days.",
+      "error_tags": [
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:VERB:TENSE",
+          "o_start": 12,
+          "o_end": 12,
+          "c_start": 12,
+          "c_end": 13,
+          "o_str": "",
+          "c_str": "have"
+        }
+      ],
+      "errant_m2": "A 12 12|||M:VERB:TENSE|||have|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:VERB:TENSE"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "M:VERB:TENSE",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "Most of all I would like to travel in July because I have already made an arrangement with my boss about my free days."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I would prefer to sleep in an log cabin.",
+      "sentence_good": "I would prefer to sleep in a log cabin.",
+      "error_tags": [
+        "FD"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 6,
+          "o_end": 7,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "an",
+          "c_str": "a"
+        }
+      ],
+      "errant_m2": "A 6 7|||R:DET|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:DET",
+      "random_foil": "I would prefer to sleep in the log cabin.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 6,
+      "random_original_token": "a",
+      "random_new_token": "the",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I would like to sleep in a log cabin."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I am not just to sleeping in a tent and I think it might ruin my holiday.",
+      "sentence_good": "I am not used to sleeping in a tent and I think it might ruin my holiday.",
+      "error_tags": [
+        "SX",
+        "FD",
+        "S",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 3,
+          "o_end": 4,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "just",
+          "c_str": "used"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:OTHER|||used|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||a|||REQUIRED|||-NONE-|||0\nA 13 14|||R:VERB|||might|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||ruin|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing am not used to sleeping in a tent and I think it might ruin my holiday.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I anm not used to sleeping in a tent and I think it might ruin my holiday.",
+      "sentence_good": "I am not used to sleeping in a tent and I think it might ruin my holiday.",
+      "error_tags": [
+        "SX",
+        "FD",
+        "S",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 7,
+          "o_end": 8,
+          "c_start": 7,
+          "c_end": 8,
+          "o_str": "an",
+          "c_str": "a"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:OTHER|||used|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||a|||REQUIRED|||-NONE-|||0\nA 13 14|||R:VERB|||might|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||ruin|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "R:DET",
+      "random_foil": "I am not used to sleeping in the tent and I think it might ruin my holiday.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 7,
+      "random_original_token": "a",
+      "random_new_token": "the",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I am not used to sleeping in the tent and I think it might ruin my holiday."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I am not used to sleeping in a tent and I think it mabey ruin my holiday.",
+      "sentence_good": "I am not used to sleeping in a tent and I think it might ruin my holiday.",
+      "error_tags": [
+        "SX",
+        "FD",
+        "S",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 13,
+          "o_end": 14,
+          "c_start": 13,
+          "c_end": 14,
+          "o_str": "mabey",
+          "c_str": "might"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:OTHER|||used|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||a|||REQUIRED|||-NONE-|||0\nA 13 14|||R:VERB|||might|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||ruin|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "R:VERB",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "I am not accustomed to sleeping in a tent and I think it might ruin my holiday."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I am not used to sleeping in a tent and I think it might ruen my holiday.",
+      "sentence_good": "I am not used to sleeping in a tent and I think it might ruin my holiday.",
+      "error_tags": [
+        "SX",
+        "FD",
+        "S",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 14,
+          "o_end": 15,
+          "c_start": 14,
+          "c_end": 15,
+          "o_str": "ruen",
+          "c_str": "ruin"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:OTHER|||used|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||a|||REQUIRED|||-NONE-|||0\nA 13 14|||R:VERB|||might|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||ruin|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I hope it's possible to sleep in a log cabin but if it's not, you can also put me in an tent.",
+      "sentence_good": "I hope it's possible to sleep in a log cabin but if it's not, you can also put me in a tent.",
+      "error_tags": [
+        "FD"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 23,
+          "o_end": 24,
+          "c_start": 23,
+          "c_end": 24,
+          "o_str": "an",
+          "c_str": "a"
+        }
+      ],
+      "errant_m2": "A 23 24|||R:DET|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:DET",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "I hope it's possible to sleep in a the cabin but if it's not, you can also put me in a tent."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are : Photography photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PUNCT",
+          "o_start": 9,
+          "o_end": 11,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": ": Photography",
+          "c_str": "photography"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 0,
+      "target_edit_type": "U:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and Surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:ORTH",
+          "o_start": 12,
+          "o_end": 13,
+          "c_start": 11,
+          "c_end": 12,
+          "o_str": "Surfing",
+          "c_str": "surfing"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:ORTH"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 1,
+      "target_edit_type": "R:ORTH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I Photography never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:NOUN",
+          "o_start": 14,
+          "o_end": 15,
+          "c_start": 13,
+          "c_end": 13,
+          "o_str": "Photography",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:NOUN"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 2,
+      "target_edit_type": "U:NOUN",
+      "random_foil": "The thing two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "thing",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "The two hobbies I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never realy got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 17,
+          "o_end": 18,
+          "c_start": 15,
+          "c_end": 16,
+          "o_str": "realy",
+          "c_str": "really"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 3,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really took any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 18,
+          "o_end": 19,
+          "c_start": 16,
+          "c_end": 17,
+          "o_str": "took",
+          "c_str": "got"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 4,
+      "target_edit_type": "R:VERB",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "The two hobbies I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:DET",
+          "o_start": 19,
+          "o_end": 19,
+          "c_start": 17,
+          "c_end": 18,
+          "o_str": "",
+          "c_str": "any"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 5,
+      "target_edit_type": "M:DET",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got any pratice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 19,
+          "o_end": 20,
+          "c_start": 18,
+          "c_end": 19,
+          "o_str": "pratice",
+          "c_str": "practice"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 6,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got any practice in . Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:NOUN",
+          "o_start": 21,
+          "o_end": 21,
+          "c_start": 20,
+          "c_end": 21,
+          "o_str": "",
+          "c_str": "photography"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:NOUN"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 7,
+      "target_edit_type": "M:NOUN",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "The two hobbies I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography, yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PUNCT",
+          "o_start": 21,
+          "o_end": 23,
+          "c_start": 21,
+          "c_end": 23,
+          "o_str": ", yes",
+          "c_str": ". Yes"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 8,
+      "target_edit_type": "R:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have made some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 25,
+          "o_end": 26,
+          "c_start": 25,
+          "c_end": 26,
+          "o_str": "made",
+          "c_str": "taken"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 9,
+      "target_edit_type": "R:VERB",
+      "random_foil": "The two do I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 2,
+      "random_original_token": "activities",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "The two hobbies I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good in photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PREP",
+          "o_start": 45,
+          "o_end": 46,
+          "c_start": 45,
+          "c_end": 46,
+          "o_str": "in",
+          "c_str": "at"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PREP"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 10,
+      "target_edit_type": "R:PREP",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "The two activities I would like to choose are photography and surfing. I never really got any practice in of Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The two activities I would like to choose are Photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "sentence_good": "The two activities I would like to choose are photography and surfing. I never really got any practice in photography. Yes I have taken some holiday pictures but I would like to learn more about this. So I am not very good at photography.",
+      "error_tags": [
+        "DY",
+        "RP",
+        "RT",
+        "RV",
+        "S",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:ORTH",
+          "o_start": 46,
+          "o_end": 47,
+          "c_start": 46,
+          "c_end": 47,
+          "o_str": "Photography",
+          "c_str": "photography"
+        }
+      ],
+      "errant_m2": "A 9 11|||U:PUNCT|||photography|||REQUIRED|||-NONE-|||0\nA 12 13|||R:ORTH|||surfing|||REQUIRED|||-NONE-|||0\nA 14 15|||U:NOUN||||||REQUIRED|||-NONE-|||0\nA 17 18|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 18 19|||R:VERB|||got|||REQUIRED|||-NONE-|||0\nA 19 19|||M:DET|||any|||REQUIRED|||-NONE-|||0\nA 19 20|||R:SPELL|||practice|||REQUIRED|||-NONE-|||0\nA 21 21|||M:NOUN|||photography|||REQUIRED|||-NONE-|||0\nA 21 23|||R:PUNCT|||. Yes|||REQUIRED|||-NONE-|||0\nA 25 26|||R:VERB|||taken|||REQUIRED|||-NONE-|||0\nA 45 46|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 46 47|||R:ORTH|||photography|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:ORTH"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 11,
+      "target_edit_type": "R:ORTH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I live nearby a beach and whenever I have the time I grab my board and go surfing.",
+      "sentence_good": "I live near a beach and whenever I have the time I grab my board and go surfing.",
+      "error_tags": [
+        "RJ",
+        "SX",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 2,
+          "o_end": 3,
+          "c_start": 2,
+          "c_end": 3,
+          "o_str": "nearby",
+          "c_str": "near"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:OTHER|||near|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB|||grab|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||board|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing live near a beach and whenever I have the time I grab my board and go surfing.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I live near a beach and whenever I have the time I grape my board and go surfing.",
+      "sentence_good": "I live near a beach and whenever I have the time I grab my board and go surfing.",
+      "error_tags": [
+        "RJ",
+        "SX",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 12,
+          "o_end": 13,
+          "c_start": 12,
+          "c_end": 13,
+          "o_str": "grape",
+          "c_str": "grab"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:OTHER|||near|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB|||grab|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||board|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "R:VERB",
+      "random_foil": "I live near a beach and whenever I do the time I grab my board and go surfing.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 8,
+      "random_original_token": "have",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I work near a beach and whenever I have the time I grab my board and go surfing."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I live near a beach and whenever I have the time I grab my bord and go surfing.",
+      "sentence_good": "I live near a beach and whenever I have the time I grab my board and go surfing.",
+      "error_tags": [
+        "RJ",
+        "SX",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 14,
+          "o_end": 15,
+          "c_start": 14,
+          "c_end": 15,
+          "o_str": "bord",
+          "c_str": "board"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:OTHER|||near|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB|||grab|||REQUIRED|||-NONE-|||0\nA 14 15|||R:SPELL|||board|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I am realy looking forward to this holiday.",
+      "sentence_good": "I am really looking forward to this holiday.",
+      "error_tags": [
+        "DY"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 2,
+          "o_end": 3,
+          "c_start": 2,
+          "c_end": 3,
+          "o_str": "realy",
+          "c_str": "really"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:SPELL|||really|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "1",
+      "exam_score": "3.3",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I hope I have informed you enough.",
+      "sentence_good": "I hope I have told you enough.",
+      "error_tags": [
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 4,
+          "o_end": 5,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "informed",
+          "c_str": "told"
+        }
+      ],
+      "errant_m2": "A 4 5|||R:VERB|||told|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB",
+      "random_foil": "I hope I do told you enough.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 3,
+      "random_original_token": "have",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I think I have told you enough."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I'm doing great after esspecially my experience helping at a pop concert.",
+      "sentence_good": "I'm doing great after my experience helping at a pop concert.",
+      "error_tags": [
+        "S",
+        "UY",
+        "UT"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:ADV",
+          "o_start": 4,
+          "o_end": 5,
+          "c_start": 4,
+          "c_end": 4,
+          "o_str": "esspecially",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 4 5|||U:ADV||||||REQUIRED|||-NONE-|||0\nA 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 11 11|||M:DET|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:ADV"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "U:ADV",
+      "random_foil": "I'm doing great after my experience really helping at a pop concert.",
+      "random_edit_type": "INS",
+      "random_edit_position": 6,
+      "random_original_token": null,
+      "random_new_token": "really",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "I'm doing this after my experience helping at a pop concert."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I'm doing great after my experience helping with at a pop concert.",
+      "sentence_good": "I'm doing great after my experience helping at a pop concert.",
+      "error_tags": [
+        "S",
+        "UY",
+        "UT"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PREP",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 7,
+          "c_end": 7,
+          "o_str": "with",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 4 5|||U:ADV||||||REQUIRED|||-NONE-|||0\nA 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 11 11|||M:DET|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PREP"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "U:PREP",
+      "random_foil": "I'm doing great after my experience helping at in a pop concert.",
+      "random_edit_type": "INS",
+      "random_edit_position": 8,
+      "random_original_token": null,
+      "random_new_token": "in",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "I'm doing this after my experience helping at a pop concert."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I'm doing great after my experience helping at pop concert.",
+      "sentence_good": "I'm doing great after my experience helping at a pop concert.",
+      "error_tags": [
+        "S",
+        "UY",
+        "UT"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:DET",
+          "o_start": 11,
+          "o_end": 11,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "",
+          "c_str": "a"
+        }
+      ],
+      "errant_m2": "A 4 5|||U:ADV||||||REQUIRED|||-NONE-|||0\nA 8 9|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 11 11|||M:DET|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "M:DET",
+      "random_foil": "I'm doing great after my experience helping at pop concert.",
+      "random_edit_type": "DEL",
+      "random_edit_position": 8,
+      "random_original_token": "a",
+      "random_new_token": null,
+      "random_length_delta": -1,
+      "random_skip_reason": null,
+      "artificial_error": "I'm doing great after my experience helping at a concert."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "You also would have liked very much.",
+      "sentence_good": "You also would have liked it very much.",
+      "error_tags": [],
+      "errant_edits": [
+        {
+          "type": "M:PRON",
+          "o_start": 5,
+          "o_end": 5,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "",
+          "c_str": "it"
+        }
+      ],
+      "errant_m2": "A 5 5|||M:PRON|||it|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PRON"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "M:PRON",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found",
+      "artificial_error": "You probably would have liked it very much."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I had to help back stages.",
+      "sentence_good": "I had to help backstage.",
+      "error_tags": [
+        "RP",
+        "CN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 4,
+          "o_end": 6,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "back stages",
+          "c_str": "backstage"
+        }
+      ],
+      "errant_m2": "A 4 6|||R:OTHER|||backstage|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing had to help backstage.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I had to take sure that every artist went in the right dressing room and not in someone else's.",
+      "sentence_good": "I had to make sure that every artist went in the right dressing room and not in someone else's.",
+      "error_tags": [
+        "RV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 3,
+          "o_end": 4,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "take",
+          "c_str": "make"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:VERB|||make|||REQUIRED|||-NONE-|||0\nA 4 6|||R:OTHER|||sure|||REQUIRED|||-NONE-|||0\nA 19 20|||R:OTHER|||else's|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB",
+      "random_foil": "I had to do sure that every artist went in the right dressing room and not in someone else's.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 3,
+      "random_original_token": "make",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I wanted to make sure that every artist went in the right dressing room and not in someone else's."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I had to make care of that every artist went in the right dressing room and not in someone else's.",
+      "sentence_good": "I had to make sure that every artist went in the right dressing room and not in someone else's.",
+      "error_tags": [
+        "RV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 4,
+          "o_end": 6,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "care of",
+          "c_str": "sure"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:VERB|||make|||REQUIRED|||-NONE-|||0\nA 4 6|||R:OTHER|||sure|||REQUIRED|||-NONE-|||0\nA 19 20|||R:OTHER|||else's|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing had to make sure that every artist went in the right dressing room and not in someone else's.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I had to make sure that every artist went in the right dressing room and not in someone elses.",
+      "sentence_good": "I had to make sure that every artist went in the right dressing room and not in someone else's.",
+      "error_tags": [
+        "RV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 19,
+          "o_end": 20,
+          "c_start": 18,
+          "c_end": 20,
+          "o_str": "elses",
+          "c_str": "else's"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:VERB|||make|||REQUIRED|||-NONE-|||0\nA 4 6|||R:OTHER|||sure|||REQUIRED|||-NONE-|||0\nA 19 20|||R:OTHER|||else's|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing had to make sure that every artist went in the right dressing room and not in someone else's.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Every artist could scream at me whenever they wanted. The realy thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "sentence_good": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "error_tags": [
+        "DJ",
+        "FN",
+        "R",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 11,
+          "o_end": 12,
+          "c_start": 11,
+          "c_end": 12,
+          "o_str": "realy",
+          "c_str": "real"
+        }
+      ],
+      "errant_m2": "A 11 12|||R:SPELL|||real|||REQUIRED|||-NONE-|||0\nA 49 50|||R:NOUN:NUM|||stage|||REQUIRED|||-NONE-|||0\nA 50 52|||R:OTHER|||and what|||REQUIRED|||-NONE-|||0\nA 56 57|||R:VERB|||should|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stages and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "sentence_good": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "error_tags": [
+        "DJ",
+        "FN",
+        "R",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:NOUN:NUM",
+          "o_start": 49,
+          "o_end": 50,
+          "c_start": 49,
+          "c_end": 50,
+          "o_str": "stages",
+          "c_str": "stage"
+        }
+      ],
+      "errant_m2": "A 11 12|||R:SPELL|||real|||REQUIRED|||-NONE-|||0\nA 49 50|||R:NOUN:NUM|||stage|||REQUIRED|||-NONE-|||0\nA 50 52|||R:OTHER|||and what|||REQUIRED|||-NONE-|||0\nA 56 57|||R:VERB|||should|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:NOUN:NUM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "R:NOUN:NUM",
+      "random_foil": "everies artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "Every",
+      "random_new_token": "everies",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Every artists could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage . What kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "sentence_good": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "error_tags": [
+        "DJ",
+        "FN",
+        "R",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 50,
+          "o_end": 52,
+          "c_start": 50,
+          "c_end": 52,
+          "o_str": ". What",
+          "c_str": "and what"
+        }
+      ],
+      "errant_m2": "A 11 12|||R:SPELL|||real|||REQUIRED|||-NONE-|||0\nA 49 50|||R:NOUN:NUM|||stage|||REQUIRED|||-NONE-|||0\nA 50 52|||R:OTHER|||and what|||REQUIRED|||-NONE-|||0\nA 56 57|||R:VERB|||should|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "Every",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they shoot wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "sentence_good": "Every artist could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "error_tags": [
+        "DJ",
+        "FN",
+        "R",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 56,
+          "o_end": 57,
+          "c_start": 56,
+          "c_end": 57,
+          "o_str": "shoot",
+          "c_str": "should"
+        }
+      ],
+      "errant_m2": "A 11 12|||R:SPELL|||real|||REQUIRED|||-NONE-|||0\nA 49 50|||R:NOUN:NUM|||stage|||REQUIRED|||-NONE-|||0\nA 50 52|||R:OTHER|||and what|||REQUIRED|||-NONE-|||0\nA 56 57|||R:VERB|||should|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "R:VERB",
+      "random_foil": "Every artist could scream at me whenever they do The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 8,
+      "random_original_token": "wanted.",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Every body could scream at me whenever they wanted. The real thing was that I had to look after them because without me they would have been lost. That was a good feeling for me. I had to tell them when they had to go on stage and what kind of clothes they should wear. I also had to give them drinks and food and help them to relax whenever they were nervous."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The thing I realy liked was helping the artists and talking to them.",
+      "sentence_good": "The thing I really liked was helping the artists and talking to them.",
+      "error_tags": [
+        "DY",
+        "UP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 3,
+          "o_end": 4,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "realy",
+          "c_str": "really"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PUNCT||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The thing I really liked , was helping the artists and talking to them.",
+      "sentence_good": "The thing I really liked was helping the artists and talking to them.",
+      "error_tags": [
+        "DY",
+        "UP"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PUNCT",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 5,
+          "o_str": ",",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 3 4|||R:SPELL|||really|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PUNCT||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 1,
+      "target_edit_type": "U:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Oke, they screamed at me all the time because they were nervous and excited about their concert.",
+      "sentence_good": "Okay, they screamed at me all the time because they were nervous and excited about their concert.",
+      "error_tags": [
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 1,
+          "o_str": "Oke",
+          "c_str": "Okay"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:SPELL|||Okay|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Afterwards they talk to me and thanked me for helping them in those exciting moments.",
+      "sentence_good": "Afterwards they talked to me and thanked me for helping them in those exciting moments.",
+      "error_tags": [
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 2,
+          "o_end": 3,
+          "c_start": 2,
+          "c_end": 3,
+          "o_str": "talk",
+          "c_str": "talked"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:VERB:TENSE|||talked|||REQUIRED|||-NONE-|||0\nA 6 7|||R:VERB:FORM|||thanked|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "Afterwards they talk to me and thanked me for helping them in those exciting moments.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 2,
+      "random_original_token": "talked",
+      "random_new_token": "talk",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Afterwards they talked to me and thanks me for helping them in those exciting moments."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Afterwards they talked to me and thanking me for helping them in those exciting moments.",
+      "sentence_good": "Afterwards they talked to me and thanked me for helping them in those exciting moments.",
+      "error_tags": [
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 6,
+          "o_end": 7,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "thanking",
+          "c_str": "thanked"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:VERB:TENSE|||talked|||REQUIRED|||-NONE-|||0\nA 6 7|||R:VERB:FORM|||thanked|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 1,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": "Afterwards they talking to me and thanked me for helping them in those exciting moments.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 2,
+      "random_original_token": "talked",
+      "random_new_token": "talking",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Afterwards they talked to me and thanked me for help them in those exciting moments."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "I realy got to know them after the concert.",
+      "sentence_good": "I really got to know them after the concert.",
+      "error_tags": [
+        "DY"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 1,
+          "o_end": 2,
+          "c_start": 1,
+          "c_end": 2,
+          "o_str": "realy",
+          "c_str": "really"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:SPELL|||really|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They also took me to a after-hours party and they asked me if I would like to do this again.",
+      "sentence_good": "They also took me to an after-hours party and they asked me if I would like to do this again.",
+      "error_tags": [
+        "FD",
+        "DJ"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "a",
+          "c_str": "an"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:DET|||an|||REQUIRED|||-NONE-|||0\nA 7 7|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 7 8|||R:NOUN:NUM|||hours|||REQUIRED|||-NONE-|||0\nA 14 14|||M:PRON|||I|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:DET",
+      "random_foil": "They also took me to the after - hours party and they asked me if I would like to do this again.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 5,
+      "random_original_token": "an",
+      "random_new_token": "the",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "They then took me to an after-hours party and they asked me if I would like to do this again."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They also took me to an afterhours party and they asked me if I would like to do this again.",
+      "sentence_good": "They also took me to an after-hours party and they asked me if I would like to do this again.",
+      "error_tags": [
+        "FD",
+        "DJ"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:PUNCT",
+          "o_start": 7,
+          "o_end": 7,
+          "c_start": 7,
+          "c_end": 8,
+          "o_str": "",
+          "c_str": "-"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:DET|||an|||REQUIRED|||-NONE-|||0\nA 7 7|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 7 8|||R:NOUN:NUM|||hours|||REQUIRED|||-NONE-|||0\nA 14 14|||M:PRON|||I|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "M:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They also took me to an after-hour party and they asked me if I would like to do this again.",
+      "sentence_good": "They also took me to an after-hours party and they asked me if I would like to do this again.",
+      "error_tags": [
+        "FD",
+        "DJ"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:NOUN:NUM",
+          "o_start": 7,
+          "o_end": 8,
+          "c_start": 8,
+          "c_end": 9,
+          "o_str": "hour",
+          "c_str": "hours"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:DET|||an|||REQUIRED|||-NONE-|||0\nA 7 7|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 7 8|||R:NOUN:NUM|||hours|||REQUIRED|||-NONE-|||0\nA 14 14|||M:PRON|||I|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:NOUN:NUM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "R:NOUN:NUM",
+      "random_foil": "theys also took me to an after - hours party and they asked me if I would like to do this again.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "They",
+      "random_new_token": "theys",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "They also took me to an after-hours party hour they asked me if I would like to do this again."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They also took me to an after-hours party and they asked me if would like to do this again.",
+      "sentence_good": "They also took me to an after-hours party and they asked me if I would like to do this again.",
+      "error_tags": [
+        "FD",
+        "DJ"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:PRON",
+          "o_start": 14,
+          "o_end": 14,
+          "c_start": 15,
+          "c_end": 16,
+          "o_str": "",
+          "c_str": "I"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:DET|||an|||REQUIRED|||-NONE-|||0\nA 7 7|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 7 8|||R:NOUN:NUM|||hours|||REQUIRED|||-NONE-|||0\nA 14 14|||M:PRON|||I|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "M:PRON",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "They then took me to an after-hours party and they asked me if I would like to do this again."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "And of course I immediately said Yes!!",
+      "sentence_good": "And of course I immediately said yes!!",
+      "error_tags": [
+        "RP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:ORTH",
+          "o_start": 6,
+          "o_end": 7,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "Yes",
+          "c_str": "yes"
+        }
+      ],
+      "errant_m2": "A 6 7|||R:ORTH|||yes|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:ORTH"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:ORTH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Mabey next time you can come with me. That would be a lot of fun.",
+      "sentence_good": "Maybe next time you can come with me. That would be a lot of fun.",
+      "error_tags": [
+        "MP",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 1,
+          "o_str": "Mabey",
+          "c_str": "Maybe"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:SPELL|||Maybe|||REQUIRED|||-NONE-|||0\nA 8 9|||M:PUNCT|||. That|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "Maybe next time you can come with me would be a lot of fun.",
+      "sentence_good": "Maybe next time you can come with me. That would be a lot of fun.",
+      "error_tags": [
+        "MP",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:PUNCT",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 8,
+          "c_end": 10,
+          "o_str": "that",
+          "c_str": ". That"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:SPELL|||Maybe|||REQUIRED|||-NONE-|||0\nA 8 9|||M:PUNCT|||. That|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 1,
+      "target_edit_type": "M:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "The will call me next week, so I will write when I have talked to them.",
+      "sentence_good": "They will call me next week, so I will write when I have talked to them.",
+      "error_tags": [
+        "R",
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PRON",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 1,
+          "o_str": "The",
+          "c_str": "They"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:PRON|||They|||REQUIRED|||-NONE-|||0\nA 9 9|||M:VERB:TENSE|||will|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB:TENSE|||have talked|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:PRON",
+      "random_foil": "They will call I next week, so I will write when I have talked to them.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 3,
+      "random_original_token": "me",
+      "random_new_token": "I",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "They will see me next week, so I will write when I have talked to them."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They call me next week, so I will write when I have talked to them.",
+      "sentence_good": "They will call me next week, so I will write when I have talked to them.",
+      "error_tags": [
+        "R",
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:VERB:TENSE",
+          "o_start": 9,
+          "o_end": 9,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "",
+          "c_str": "will"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:PRON|||They|||REQUIRED|||-NONE-|||0\nA 9 9|||M:VERB:TENSE|||will|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB:TENSE|||have talked|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "M:VERB:TENSE",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "They will see me next week, so I will write when I have talked to them."
+    },
+    {
+      "language": "Dutch",
+      "age": "21-25",
+      "candidate_score": "29.0",
+      "question_number": "4",
+      "exam_score": "4.1",
+      "source_filename": "doc1272.xml",
+      "sentence_bad": "They will call me next week, so I will write when I talk to them.",
+      "sentence_good": "They will call me next week, so I will write when I have talked to them.",
+      "error_tags": [
+        "R",
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 12,
+          "o_end": 13,
+          "c_start": 13,
+          "c_end": 15,
+          "o_str": "talk",
+          "c_str": "have talked"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:PRON|||They|||REQUIRED|||-NONE-|||0\nA 9 9|||M:VERB:TENSE|||will|||REQUIRED|||-NONE-|||0\nA 12 13|||R:VERB:TENSE|||have talked|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "They will call me next week, so I will write when I had talked to them.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 12,
+      "random_original_token": "have",
+      "random_new_token": "had",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "They will see me next week, so I will write when I have talked to them."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "I have reading the letter and I was very surprised that I have won the first prize.",
+      "sentence_good": "I have read the letter and I was very surprised that I have won the first prize.",
+      "error_tags": [
+        "FV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 2,
+          "o_end": 3,
+          "c_start": 2,
+          "c_end": 3,
+          "o_str": "reading",
+          "c_str": "read"
+        }
+      ],
+      "errant_m2": "A 2 3|||R:VERB:FORM|||read|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": "I have read the letter and I to was very surprised that I have won the first prize.",
+      "random_edit_type": "INS",
+      "random_edit_position": 7,
+      "random_original_token": null,
+      "random_new_token": "to",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "I have read the book and I was very surprised that I have won the first prize."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the time when I like to travel it can only be in July, because in the summer it is very busy at work.",
+      "sentence_good": "About the time when I want to travel it can only be in July, because in the summer it is very busy at work.",
+      "error_tags": [
+        "RV",
+        "AS",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "like",
+          "c_str": "want"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:VERB|||want|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||it can|||REQUIRED|||-NONE-|||0\nA 10 10|||M:OTHER|||be in|||REQUIRED|||-NONE-|||0\nA 16 18|||R:WO|||it is|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "At the time when I want to travel it can only be in July, because in the summer it is very busy at work."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the time when I want to travel is only be in July, because in the summer it is very busy at work.",
+      "sentence_good": "About the time when I want to travel it can only be in July, because in the summer it is very busy at work.",
+      "error_tags": [
+        "RV",
+        "AS",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 8,
+          "c_end": 10,
+          "o_str": "is",
+          "c_str": "it can"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:VERB|||want|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||it can|||REQUIRED|||-NONE-|||0\nA 10 10|||M:OTHER|||be in|||REQUIRED|||-NONE-|||0\nA 16 18|||R:WO|||it is|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing the time when I want to travel it can only be in July, because in the summer it is very busy at work.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "About",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the time when I want to travel it can only July, because in the summer it is very busy at work.",
+      "sentence_good": "About the time when I want to travel it can only be in July, because in the summer it is very busy at work.",
+      "error_tags": [
+        "RV",
+        "AS",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:OTHER",
+          "o_start": 10,
+          "o_end": 10,
+          "c_start": 11,
+          "c_end": 13,
+          "o_str": "",
+          "c_str": "be in"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:VERB|||want|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||it can|||REQUIRED|||-NONE-|||0\nA 10 10|||M:OTHER|||be in|||REQUIRED|||-NONE-|||0\nA 16 18|||R:WO|||it is|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "M:OTHER",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the time when I want to travel it can only be in July, because in the summer is it very busy at work.",
+      "sentence_good": "About the time when I want to travel it can only be in July, because in the summer it is very busy at work.",
+      "error_tags": [
+        "RV",
+        "AS",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:WO",
+          "o_start": 16,
+          "o_end": 18,
+          "c_start": 19,
+          "c_end": 21,
+          "o_str": "is it",
+          "c_str": "it is"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:VERB|||want|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||it can|||REQUIRED|||-NONE-|||0\nA 10 10|||M:OTHER|||be in|||REQUIRED|||-NONE-|||0\nA 16 18|||R:WO|||it is|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:WO"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "R:WO",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "People where I work with are going on holiday in June and August.",
+      "sentence_good": "People whom I work with are going on holiday in June and August.",
+      "error_tags": [
+        "SX",
+        "TV",
+        "UA",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 1,
+          "o_end": 2,
+          "c_start": 1,
+          "c_end": 2,
+          "o_str": "where",
+          "c_str": "whom"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:OTHER|||whom|||REQUIRED|||-NONE-|||0\nA 3 4|||R:VERB:FORM|||work|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 11 12|||R:SPELL|||June|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "People thing I work with are going on holiday in June and August.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 1,
+      "random_original_token": "whom",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "People whom I working with are going on holiday in June and August.",
+      "sentence_good": "People whom I work with are going on holiday in June and August.",
+      "error_tags": [
+        "SX",
+        "TV",
+        "UA",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 3,
+          "o_end": 4,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "working",
+          "c_str": "work"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:OTHER|||whom|||REQUIRED|||-NONE-|||0\nA 3 4|||R:VERB:FORM|||work|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 11 12|||R:SPELL|||June|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": "People whom I work with are goed on holiday in June and August.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 6,
+      "random_original_token": "going",
+      "random_new_token": "goed",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "People whom I work with are go on holiday in June and August."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "People whom I work with they are going on holiday in June and August.",
+      "sentence_good": "People whom I work with are going on holiday in June and August.",
+      "error_tags": [
+        "SX",
+        "TV",
+        "UA",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PRON",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 5,
+          "o_str": "they",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 1 2|||R:OTHER|||whom|||REQUIRED|||-NONE-|||0\nA 3 4|||R:VERB:FORM|||work|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 11 12|||R:SPELL|||June|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "U:PRON",
+      "random_foil": "People my whom I work with are going on holiday in June and August.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "my",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "Many whom I work with are going on holiday in June and August."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "People whom I work with are going on holiday in Juni and August.",
+      "sentence_good": "People whom I work with are going on holiday in June and August.",
+      "error_tags": [
+        "SX",
+        "TV",
+        "UA",
+        "S"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 11,
+          "o_end": 12,
+          "c_start": 10,
+          "c_end": 11,
+          "o_str": "Juni",
+          "c_str": "June"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:OTHER|||whom|||REQUIRED|||-NONE-|||0\nA 3 4|||R:VERB:FORM|||work|||REQUIRED|||-NONE-|||0\nA 5 6|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 11 12|||R:SPELL|||June|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "So hey need me at work in those months.",
+      "sentence_good": "So they need me at work in those months.",
+      "error_tags": [
+        "SX",
+        "AGD"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 1,
+          "o_end": 2,
+          "c_start": 1,
+          "c_end": 2,
+          "o_str": "hey",
+          "c_str": "they"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:SPELL|||they|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||those|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "So they need me at work in that months.",
+      "sentence_good": "So they need me at work in those months.",
+      "error_tags": [
+        "SX",
+        "AGD"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 7,
+          "o_end": 8,
+          "c_start": 7,
+          "c_end": 8,
+          "o_str": "that",
+          "c_str": "those"
+        }
+      ],
+      "errant_m2": "A 1 2|||R:SPELL|||they|||REQUIRED|||-NONE-|||0\nA 7 8|||R:DET|||those|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 1,
+      "target_edit_type": "R:DET",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "And they need me at work in those months."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Further the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 2,
+          "o_str": "Further",
+          "c_str": "Also,"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "Also, a accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 1,
+      "random_original_token": "the",
+      "random_new_token": "a",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accomodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 2,
+          "o_end": 3,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "accomodation",
+          "c_str": "accommodation"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 1,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:VERB:TENSE",
+          "o_start": 4,
+          "o_end": 4,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "",
+          "c_str": "would"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 2,
+      "target_edit_type": "M:VERB:TENSE",
+      "random_foil": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stay in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 22,
+      "random_original_token": "stayed",
+      "random_new_token": "stay",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in stays small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because . first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PUNCT",
+          "o_start": 12,
+          "o_end": 13,
+          "c_start": 14,
+          "c_end": 14,
+          "o_str": ".",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 3,
+      "target_edit_type": "U:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabinBecause, first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:WO",
+          "o_start": 13,
+          "o_end": 15,
+          "c_start": 14,
+          "c_end": 16,
+          "o_str": "Because,",
+          "c_str": ", because"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:WO"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 4,
+      "target_edit_type": "R:WO",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when at I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PREP",
+          "o_start": 15,
+          "o_end": 16,
+          "c_start": 16,
+          "c_end": 16,
+          "o_str": "at",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PREP"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 5,
+      "target_edit_type": "U:PREP",
+      "random_foil": "Also, in the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "in",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "But the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we were staying in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 24,
+          "o_end": 26,
+          "c_start": 24,
+          "c_end": 25,
+          "o_str": "were staying",
+          "c_str": "stayed"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 6,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "Also, the accommodation I would prefer at Camp California ised the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 9,
+      "random_original_token": "is",
+      "random_new_token": "ised",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in stays small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a every holiday small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:OTHER",
+          "o_start": 26,
+          "o_end": 28,
+          "c_start": 25,
+          "c_end": 25,
+          "o_str": "every holiday",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 7,
+      "target_edit_type": "U:OTHER",
+      "random_foil": "thing the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "Also,",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:OTHER",
+          "o_start": 32,
+          "o_end": 32,
+          "c_start": 29,
+          "c_end": 31,
+          "o_str": "",
+          "c_str": "every holiday"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 8,
+      "target_edit_type": "M:OTHER",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't At second like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PREP",
+          "o_start": 37,
+          "o_end": 39,
+          "c_start": 36,
+          "c_end": 37,
+          "o_str": "At second",
+          "c_str": "Second"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PREP"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 9,
+      "target_edit_type": "U:PREP",
+      "random_foil": "Also, in the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "in",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "But the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log dobin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 47,
+          "o_end": 48,
+          "c_start": 45,
+          "c_end": 46,
+          "o_str": "do",
+          "c_str": "ca"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 10,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "Also, the accommodation I would prefer at Camp California ised the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 9,
+      "random_original_token": "is",
+      "random_new_token": "ised",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in stays small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to it, so I prefer log cabins.",
+      "sentence_good": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "error_tags": [
+        "AGA",
+        "DY",
+        "R",
+        "RP",
+        "RV",
+        "RY",
+        "S",
+        "TV",
+        "UP",
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PRON",
+          "o_start": 52,
+          "o_end": 53,
+          "c_start": 50,
+          "c_end": 51,
+          "o_str": "it",
+          "c_str": "them"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:OTHER|||Also,|||REQUIRED|||-NONE-|||0\nA 2 3|||R:SPELL|||accommodation|||REQUIRED|||-NONE-|||0\nA 4 4|||M:VERB:TENSE|||would|||REQUIRED|||-NONE-|||0\nA 12 13|||U:PUNCT||||||REQUIRED|||-NONE-|||0\nA 13 15|||R:WO|||, because|||REQUIRED|||-NONE-|||0\nA 15 16|||U:PREP||||||REQUIRED|||-NONE-|||0\nA 24 26|||R:VERB:TENSE|||stayed|||REQUIRED|||-NONE-|||0\nA 26 28|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 32 32|||M:OTHER|||every holiday|||REQUIRED|||-NONE-|||0\nA 37 39|||U:PREP|||Second|||REQUIRED|||-NONE-|||0\nA 47 48|||R:VERB:TENSE|||ca|||REQUIRED|||-NONE-|||0\nA 52 53|||R:PRON|||them|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 12,
+      "target_edit_index": 11,
+      "target_edit_type": "R:PRON",
+      "random_foil": "Also, the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child us stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 21,
+      "random_original_token": "we",
+      "random_new_token": "us",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "But the accommodation I would prefer at Camp California is the log cabin, because first when I was a little child we stayed in a small house every holiday and I like that. Second, I don't like tents and I can't get used to them, so I prefer log cabins."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the different activities we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "sentence_good": "About the different activities, we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "error_tags": [
+        "TV",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:PUNCT",
+          "o_start": 4,
+          "o_end": 4,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "",
+          "c_str": ","
+        }
+      ],
+      "errant_m2": "A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0\nA 12 12|||M:VERB|||have to|||REQUIRED|||-NONE-|||0\nA 15 16|||R:OTHER|||opt for|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "M:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the different activities, we like them all, but If I choose two I opt for sailing and tennis.",
+      "sentence_good": "About the different activities, we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "error_tags": [
+        "TV",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:VERB",
+          "o_start": 12,
+          "o_end": 12,
+          "c_start": 13,
+          "c_end": 15,
+          "o_str": "",
+          "c_str": "have to"
+        }
+      ],
+      "errant_m2": "A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0\nA 12 12|||M:VERB|||have to|||REQUIRED|||-NONE-|||0\nA 15 16|||R:OTHER|||opt for|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:VERB"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "M:VERB",
+      "random_foil": "About the different we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "random_edit_type": "DEL",
+      "random_edit_position": 3,
+      "random_original_token": "activities,",
+      "random_new_token": null,
+      "random_length_delta": -1,
+      "random_skip_reason": null,
+      "artificial_error": "About the other activities, we like them all, but If I have to choose two I opt for sailing and tennis."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "About the different activities, we like them all, but If I have to choose two I take sailing and tennis.",
+      "sentence_good": "About the different activities, we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "error_tags": [
+        "TV",
+        "RV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 15,
+          "o_end": 16,
+          "c_start": 18,
+          "c_end": 20,
+          "o_str": "take",
+          "c_str": "opt for"
+        }
+      ],
+      "errant_m2": "A 4 4|||M:PUNCT|||,|||REQUIRED|||-NONE-|||0\nA 12 12|||M:VERB|||have to|||REQUIRED|||-NONE-|||0\nA 15 16|||R:OTHER|||opt for|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing the different activities, we like them all, but If I have to choose two I opt for sailing and tennis.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "About",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "In the summer I'm sailing races almost every weekend and I have my own sailing clothes.",
+      "sentence_good": "In the summer I'm sailing in races almost every weekend and I have my own sailing clothes.",
+      "error_tags": [],
+      "errant_edits": [
+        {
+          "type": "M:PREP",
+          "o_start": 6,
+          "o_end": 6,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "",
+          "c_str": "in"
+        }
+      ],
+      "errant_m2": "A 6 6|||M:PREP|||in|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PREP"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "M:PREP",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "the summer I'm sailing in races almost every weekend and I have my own sailing clothes."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "I'm not very good in tennis but I can practise on my trip.",
+      "sentence_good": "I'm not very good at tennis but I can practise on my trip.",
+      "error_tags": [
+        "RT",
+        "RP",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PREP",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "in",
+          "c_str": "at"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 6 7|||R:ORTH|||tennis|||REQUIRED|||-NONE-|||0\nA 13 14|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PREP"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:PREP",
+      "random_foil": "I'm not very good to tennis but I can practise on my trip.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 4,
+      "random_original_token": "at",
+      "random_new_token": "to",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I'm not very good at of but I can practise on my trip."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "I'm not very good at Tennis but I can practise on my trip.",
+      "sentence_good": "I'm not very good at tennis but I can practise on my trip.",
+      "error_tags": [
+        "RT",
+        "RP",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:ORTH",
+          "o_start": 6,
+          "o_end": 7,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "Tennis",
+          "c_str": "tennis"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 6 7|||R:ORTH|||tennis|||REQUIRED|||-NONE-|||0\nA 13 14|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:ORTH"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "R:ORTH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "I'm not very good at tennis but I can practise on my travel.",
+      "sentence_good": "I'm not very good at tennis but I can practise on my trip.",
+      "error_tags": [
+        "RT",
+        "RP",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:NOUN",
+          "o_start": 13,
+          "o_end": 14,
+          "c_start": 13,
+          "c_end": 14,
+          "o_str": "travel",
+          "c_str": "trip"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:PREP|||at|||REQUIRED|||-NONE-|||0\nA 6 7|||R:ORTH|||tennis|||REQUIRED|||-NONE-|||0\nA 13 14|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:NOUN"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:NOUN",
+      "random_foil": "thing not very good at tennis but I can practise on my trip.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "I'm",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "I'm not very strong at tennis but I can practise on my trip."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Which things must I pay for on my trip?",
+      "sentence_good": "What things must I pay for on my trip?",
+      "error_tags": [
+        "RA",
+        "W",
+        "FV",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 1,
+          "o_str": "Which",
+          "c_str": "What"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:DET|||What|||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||must I|||REQUIRED|||-NONE-|||0\nA 4 5|||R:VERB:FORM|||pay|||REQUIRED|||-NONE-|||0\nA 8 9|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:DET",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found",
+      "artificial_error": "What else must I pay for on my trip?"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "What things I must pay for on my trip?",
+      "sentence_good": "What things must I pay for on my trip?",
+      "error_tags": [
+        "RA",
+        "W",
+        "FV",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:WO",
+          "o_start": 2,
+          "o_end": 4,
+          "c_start": 2,
+          "c_end": 4,
+          "o_str": "I must",
+          "c_str": "must I"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:DET|||What|||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||must I|||REQUIRED|||-NONE-|||0\nA 4 5|||R:VERB:FORM|||pay|||REQUIRED|||-NONE-|||0\nA 8 9|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:WO"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "R:WO",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "What things must I paid for on my trip?",
+      "sentence_good": "What things must I pay for on my trip?",
+      "error_tags": [
+        "RA",
+        "W",
+        "FV",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 4,
+          "o_end": 5,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "paid",
+          "c_str": "pay"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:DET|||What|||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||must I|||REQUIRED|||-NONE-|||0\nA 4 5|||R:VERB:FORM|||pay|||REQUIRED|||-NONE-|||0\nA 8 9|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "What else must I pay for on my trip?"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "1",
+      "exam_score": "2.3",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "What things must I pay for on my travel?",
+      "sentence_good": "What things must I pay for on my trip?",
+      "error_tags": [
+        "RA",
+        "W",
+        "FV",
+        "RN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:NOUN",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 8,
+          "c_end": 9,
+          "o_str": "travel",
+          "c_str": "trip"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:DET|||What|||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||must I|||REQUIRED|||-NONE-|||0\nA 4 5|||R:VERB:FORM|||pay|||REQUIRED|||-NONE-|||0\nA 8 9|||R:NOUN|||trip|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:NOUN"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "R:NOUN",
+      "random_foil": "thing things must I pay for on my trip?",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "What",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "What else must I pay for on my trip?"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "With me Everything is fine with me and the pop concert was great.",
+      "sentence_good": "Everything is fine with me and the pop concert was great.",
+      "error_tags": [
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:OTHER",
+          "o_start": 0,
+          "o_end": 2,
+          "c_start": 0,
+          "c_end": 0,
+          "o_str": "With me",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 0 2|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||Everything is|||REQUIRED|||-NONE-|||0\nA 5 5|||M:OTHER|||with me|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "U:OTHER",
+      "random_foil": "Everything things fine with me and the pop concert was great.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 1,
+      "random_original_token": "is",
+      "random_new_token": "things",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "is everything fine with me and the pop concert was great.",
+      "sentence_good": "Everything is fine with me and the pop concert was great.",
+      "error_tags": [
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:WO",
+          "o_start": 2,
+          "o_end": 4,
+          "c_start": 0,
+          "c_end": 2,
+          "o_str": "is everything",
+          "c_str": "Everything is"
+        }
+      ],
+      "errant_m2": "A 0 2|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||Everything is|||REQUIRED|||-NONE-|||0\nA 5 5|||M:OTHER|||with me|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:WO"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "R:WO",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Everything is fine and the pop concert was great.",
+      "sentence_good": "Everything is fine with me and the pop concert was great.",
+      "error_tags": [
+        "W"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:OTHER",
+          "o_start": 5,
+          "o_end": 5,
+          "c_start": 3,
+          "c_end": 5,
+          "o_str": "",
+          "c_str": "with me"
+        }
+      ],
+      "errant_m2": "A 0 2|||U:OTHER||||||REQUIRED|||-NONE-|||0\nA 2 4|||R:WO|||Everything is|||REQUIRED|||-NONE-|||0\nA 5 5|||M:OTHER|||with me|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "M:OTHER",
+      "random_foil": "Everything fine with me and the pop concert was great.",
+      "random_edit_type": "DEL",
+      "random_edit_position": 1,
+      "random_original_token": "is",
+      "random_new_token": null,
+      "random_length_delta": -1,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "I enjoyed helping at the popconcert, but it's very stressful work.",
+      "sentence_good": "I enjoyed helping at the pop concert, but it's very stressful work.",
+      "error_tags": [
+        "RP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:ORTH",
+          "o_start": 5,
+          "o_end": 6,
+          "c_start": 5,
+          "c_end": 7,
+          "o_str": "popconcert",
+          "c_str": "pop concert"
+        }
+      ],
+      "errant_m2": "A 5 6|||R:ORTH|||pop concert|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:ORTH"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:ORTH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "You always walk from side to side to move things and there's no break.",
+      "sentence_good": "You always walk from side to side moving things and there's no break.",
+      "error_tags": [
+        "FV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 7,
+          "o_end": 9,
+          "c_start": 7,
+          "c_end": 8,
+          "o_str": "to move",
+          "c_str": "moving"
+        }
+      ],
+      "errant_m2": "A 7 9|||R:VERB:FORM|||moving|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": "You always walk from side to side moved things and there's no break.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 7,
+      "random_original_token": "moving",
+      "random_new_token": "moved",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "You always walk from side to siding moving things and there's no break."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Some other work what I did was to lead the people to their places.",
+      "sentence_good": "Some other work that I did was to lead the people to their places.",
+      "error_tags": [
+        "RA",
+        "TV",
+        "SX"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PRON",
+          "o_start": 3,
+          "o_end": 4,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "what",
+          "c_str": "that"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:PRON|||that|||REQUIRED|||-NONE-|||0\nA 5 7|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 13 14|||R:DET|||their|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:PRON",
+      "random_foil": "Some other work that I did was to lead the people to them places.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 12,
+      "random_original_token": "their",
+      "random_new_token": "them",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Some important work that I did was to lead the people to their places."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Some other work that I have done was to lead the people to their places.",
+      "sentence_good": "Some other work that I did was to lead the people to their places.",
+      "error_tags": [
+        "RA",
+        "TV",
+        "SX"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 5,
+          "o_end": 7,
+          "c_start": 5,
+          "c_end": 6,
+          "o_str": "have done",
+          "c_str": "did"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:PRON|||that|||REQUIRED|||-NONE-|||0\nA 5 7|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 13 14|||R:DET|||their|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "Some other work that I do was to lead the people to their places.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 5,
+      "random_original_token": "did",
+      "random_new_token": "do",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Some important work that I did was to lead the people to their places."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Some other work that I did was to lead the people to there places.",
+      "sentence_good": "Some other work that I did was to lead the people to their places.",
+      "error_tags": [
+        "RA",
+        "TV",
+        "SX"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:DET",
+          "o_start": 13,
+          "o_end": 14,
+          "c_start": 12,
+          "c_end": 13,
+          "o_str": "there",
+          "c_str": "their"
+        }
+      ],
+      "errant_m2": "A 3 4|||R:PRON|||that|||REQUIRED|||-NONE-|||0\nA 5 7|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 13 14|||R:DET|||their|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "R:DET",
+      "random_foil": "Some other work that I did was to lead a people to their places.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 9,
+      "random_original_token": "the",
+      "random_new_token": "a",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "the other work that I did was to lead the people to their places."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "We have worked the whole day and luckily at least we had some food.",
+      "sentence_good": "We worked the whole day and luckily at least we had some food.",
+      "error_tags": [
+        "TV"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:VERB:TENSE",
+          "o_start": 1,
+          "o_end": 2,
+          "c_start": 1,
+          "c_end": 1,
+          "o_str": "have",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 1 2|||U:VERB:TENSE||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:VERB:TENSE"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "U:VERB:TENSE",
+      "random_foil": "We worked the whole day and luckily at least we haded some food.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 10,
+      "random_original_token": "had",
+      "random_new_token": "haded",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "We worked the whole day and luckily at least we has some food."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "The most beautiful things were that we saw famous singers and I spoke with Robbie Williams.",
+      "sentence_good": "The best things were that we saw famous singers and I spoke with Robbie Williams.",
+      "error_tags": [
+        "RJ"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 1,
+          "o_end": 3,
+          "c_start": 1,
+          "c_end": 2,
+          "o_str": "most beautiful",
+          "c_str": "best"
+        }
+      ],
+      "errant_m2": "A 1 3|||R:OTHER|||best|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "The thing things were that we saw famous singers and I spoke with Robbie Williams.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 1,
+      "random_original_token": "best",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "He's friendly and very handsome off course.",
+      "sentence_good": "He's friendly and very handsome of course.",
+      "error_tags": [
+        "SX"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:SPELL",
+          "o_start": 6,
+          "o_end": 7,
+          "c_start": 6,
+          "c_end": 7,
+          "o_str": "off",
+          "c_str": "of"
+        }
+      ],
+      "errant_m2": "A 6 7|||R:SPELL|||of|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:SPELL"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:SPELL",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "If you see the famous singers in reality they are different and most singers haven't any time for you.",
+      "sentence_good": "If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "error_tags": [
+        "RY",
+        "UD",
+        "UA",
+        "ID"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 7,
+          "o_end": 8,
+          "c_start": 7,
+          "c_end": 9,
+          "o_str": "reality",
+          "c_str": "the flesh"
+        }
+      ],
+      "errant_m2": "A 7 8|||R:OTHER|||the flesh|||REQUIRED|||-NONE-|||0\nA 12 13|||U:DET||||||REQUIRED|||-NONE-|||0\nA 15 16|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 18 18|||M:DET|||any|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 0,
+      "target_edit_type": "R:OTHER",
+      "random_foil": "thing you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 0,
+      "random_original_token": "If",
+      "random_new_token": "thing",
+      "random_length_delta": 0,
+      "random_skip_reason": null
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "If you see the famous singers in the flesh they are different and the most singers haven't any time for you.",
+      "sentence_good": "If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "error_tags": [
+        "RY",
+        "UD",
+        "UA",
+        "ID"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:DET",
+          "o_start": 12,
+          "o_end": 13,
+          "c_start": 13,
+          "c_end": 13,
+          "o_str": "the",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 7 8|||R:OTHER|||the flesh|||REQUIRED|||-NONE-|||0\nA 12 13|||U:DET||||||REQUIRED|||-NONE-|||0\nA 15 16|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 18 18|||M:DET|||any|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 1,
+      "target_edit_type": "U:DET",
+      "random_foil": "the If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "random_edit_type": "INS",
+      "random_edit_position": 0,
+      "random_original_token": null,
+      "random_new_token": "the",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "If the you see the famous singers in the flesh they are different and most singers haven't any time for you."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "If you see the famous singers in the flesh they are different and most singers they haven't any time for you.",
+      "sentence_good": "If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "error_tags": [
+        "RY",
+        "UD",
+        "UA",
+        "ID"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:PRON",
+          "o_start": 15,
+          "o_end": 16,
+          "c_start": 15,
+          "c_end": 15,
+          "o_str": "they",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 7 8|||R:OTHER|||the flesh|||REQUIRED|||-NONE-|||0\nA 12 13|||U:DET||||||REQUIRED|||-NONE-|||0\nA 15 16|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 18 18|||M:DET|||any|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 2,
+      "target_edit_type": "U:PRON",
+      "random_foil": "my If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "random_edit_type": "INS",
+      "random_edit_position": 0,
+      "random_original_token": null,
+      "random_new_token": "my",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "If you meet the famous singers in the flesh they are different and most singers haven't any time for you."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "If you see the famous singers in the flesh they are different and most singers haven't time for you.",
+      "sentence_good": "If you see the famous singers in the flesh they are different and most singers haven't any time for you.",
+      "error_tags": [
+        "RY",
+        "UD",
+        "UA",
+        "ID"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:DET",
+          "o_start": 18,
+          "o_end": 18,
+          "c_start": 17,
+          "c_end": 18,
+          "o_str": "",
+          "c_str": "any"
+        }
+      ],
+      "errant_m2": "A 7 8|||R:OTHER|||the flesh|||REQUIRED|||-NONE-|||0\nA 12 13|||U:DET||||||REQUIRED|||-NONE-|||0\nA 15 16|||U:PRON||||||REQUIRED|||-NONE-|||0\nA 18 18|||M:DET|||any|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:DET"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 4,
+      "target_edit_index": 3,
+      "target_edit_type": "M:DET",
+      "random_foil": "If you see famous singers in the flesh they are different and most singers haven't any time for you.",
+      "random_edit_type": "DEL",
+      "random_edit_position": 3,
+      "random_original_token": "the",
+      "random_new_token": null,
+      "random_length_delta": -1,
+      "random_skip_reason": null,
+      "artificial_error": "If you see famous singers in the flesh they are different and most singers haven't any time for you."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Another thing I have done was the make-up but only for about fifteen minutes.",
+      "sentence_good": "Another thing I did was the make-up but only for about fifteen minutes.",
+      "error_tags": [
+        "TV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:TENSE",
+          "o_start": 3,
+          "o_end": 5,
+          "c_start": 3,
+          "c_end": 4,
+          "o_str": "have done",
+          "c_str": "did"
+        }
+      ],
+      "errant_m2": "A 3 5|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 8 8|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 9 9|||M:CONJ|||but|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:TENSE"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB:TENSE",
+      "random_foil": "Another thinged I did was the make - up but only for about fifteen minutes.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 1,
+      "random_original_token": "thing",
+      "random_new_token": "thinged",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "Another job I did was the make-up but only for about fifteen minutes."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Another thing I did was the makeup but only for about fifteen minutes.",
+      "sentence_good": "Another thing I did was the make-up but only for about fifteen minutes.",
+      "error_tags": [
+        "TV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:PUNCT",
+          "o_start": 8,
+          "o_end": 8,
+          "c_start": 7,
+          "c_end": 8,
+          "o_str": "",
+          "c_str": "-"
+        }
+      ],
+      "errant_m2": "A 3 5|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 8 8|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 9 9|||M:CONJ|||but|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:PUNCT"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 1,
+      "target_edit_type": "M:PUNCT",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "orthography_spelling_punct_skipped"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Another thing I did was the make-up only for about fifteen minutes.",
+      "sentence_good": "Another thing I did was the make-up but only for about fifteen minutes.",
+      "error_tags": [
+        "TV",
+        "MP"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:CONJ",
+          "o_start": 9,
+          "o_end": 9,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "",
+          "c_str": "but"
+        }
+      ],
+      "errant_m2": "A 3 5|||R:VERB:TENSE|||did|||REQUIRED|||-NONE-|||0\nA 8 8|||M:PUNCT|||-|||REQUIRED|||-NONE-|||0\nA 9 9|||M:CONJ|||but|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:CONJ"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 3,
+      "target_edit_index": 2,
+      "target_edit_type": "M:CONJ",
+      "random_foil": "Another thing I did was the make - up only for about fifteen minutes.",
+      "random_edit_type": "DEL",
+      "random_edit_position": 9,
+      "random_original_token": "but",
+      "random_new_token": null,
+      "random_length_delta": -1,
+      "random_skip_reason": null,
+      "artificial_error": "Another job I did was the make-up but only for about fifteen minutes."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "That was very nice, because I didn't expected that.",
+      "sentence_good": "That was very nice, because I didn't expect that.",
+      "error_tags": [
+        "FV"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 9,
+          "o_end": 10,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "expected",
+          "c_str": "expect"
+        }
+      ],
+      "errant_m2": "A 9 10|||R:VERB:FORM|||expect|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": "That to was very nice, because I didn't expect that.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "to",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "That was really nice, because I didn't expect that."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "There were some people they gave me some advice about cleaning the face etc.",
+      "sentence_good": "There were some people who gave me some advice about cleaning the face etc.",
+      "error_tags": [
+        "RA",
+        "DN",
+        "FV",
+        "UC"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PRON",
+          "o_start": 4,
+          "o_end": 5,
+          "c_start": 4,
+          "c_end": 5,
+          "o_str": "they",
+          "c_str": "who"
+        }
+      ],
+      "errant_m2": "A 4 5|||R:PRON|||who|||REQUIRED|||-NONE-|||0\nA 8 9|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0\nA 9 10|||R:PART|||about|||REQUIRED|||-NONE-|||0\nA 10 11|||R:VERB:FORM|||cleaning|||REQUIRED|||-NONE-|||0\nA 13 14|||U:CONJ||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PRON"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 5,
+      "target_edit_index": 0,
+      "target_edit_type": "R:PRON",
+      "random_foil": "There were some people who gave I some advice about cleaning the face etc.",
+      "random_edit_type": "SUB",
+      "random_edit_position": 6,
+      "random_original_token": "me",
+      "random_new_token": "I",
+      "random_length_delta": 0,
+      "random_skip_reason": null,
+      "artificial_error": "There are some people who gave me some advice about cleaning the face etc."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "There were some people who gave me some advise about cleaning the face etc.",
+      "sentence_good": "There were some people who gave me some advice about cleaning the face etc.",
+      "error_tags": [
+        "RA",
+        "DN",
+        "FV",
+        "UC"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:MORPH",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 8,
+          "c_end": 9,
+          "o_str": "advise",
+          "c_str": "advice"
+        }
+      ],
+      "errant_m2": "A 4 5|||R:PRON|||who|||REQUIRED|||-NONE-|||0\nA 8 9|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0\nA 9 10|||R:PART|||about|||REQUIRED|||-NONE-|||0\nA 10 11|||R:VERB:FORM|||cleaning|||REQUIRED|||-NONE-|||0\nA 13 14|||U:CONJ||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:MORPH"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 5,
+      "target_edit_index": 1,
+      "target_edit_type": "R:MORPH",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "There were some people who gave me some advice to cleaning the face etc.",
+      "sentence_good": "There were some people who gave me some advice about cleaning the face etc.",
+      "error_tags": [
+        "RA",
+        "DN",
+        "FV",
+        "UC"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:PART",
+          "o_start": 9,
+          "o_end": 10,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "to",
+          "c_str": "about"
+        }
+      ],
+      "errant_m2": "A 4 5|||R:PRON|||who|||REQUIRED|||-NONE-|||0\nA 8 9|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0\nA 9 10|||R:PART|||about|||REQUIRED|||-NONE-|||0\nA 10 11|||R:VERB:FORM|||cleaning|||REQUIRED|||-NONE-|||0\nA 13 14|||U:CONJ||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:PART"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 5,
+      "target_edit_index": 2,
+      "target_edit_type": "R:PART",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_applicable_edits_found",
+      "artificial_error": "There are some people who gave me some advice about cleaning the face etc."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "There were some people who gave me some advice about clean the face etc.",
+      "sentence_good": "There were some people who gave me some advice about cleaning the face etc.",
+      "error_tags": [
+        "RA",
+        "DN",
+        "FV",
+        "UC"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:VERB:FORM",
+          "o_start": 10,
+          "o_end": 11,
+          "c_start": 10,
+          "c_end": 11,
+          "o_str": "clean",
+          "c_str": "cleaning"
+        }
+      ],
+      "errant_m2": "A 4 5|||R:PRON|||who|||REQUIRED|||-NONE-|||0\nA 8 9|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0\nA 9 10|||R:PART|||about|||REQUIRED|||-NONE-|||0\nA 10 11|||R:VERB:FORM|||cleaning|||REQUIRED|||-NONE-|||0\nA 13 14|||U:CONJ||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:VERB:FORM"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 5,
+      "target_edit_index": 3,
+      "target_edit_type": "R:VERB:FORM",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "There are some people who gave me some advice about cleaning the face etc."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "There were some people who gave me some advice about cleaning the face and etc.",
+      "sentence_good": "There were some people who gave me some advice about cleaning the face etc.",
+      "error_tags": [
+        "RA",
+        "DN",
+        "FV",
+        "UC"
+      ],
+      "errant_edits": [
+        {
+          "type": "U:CONJ",
+          "o_start": 13,
+          "o_end": 14,
+          "c_start": 13,
+          "c_end": 13,
+          "o_str": "and",
+          "c_str": ""
+        }
+      ],
+      "errant_m2": "A 4 5|||R:PRON|||who|||REQUIRED|||-NONE-|||0\nA 8 9|||R:MORPH|||advice|||REQUIRED|||-NONE-|||0\nA 9 10|||R:PART|||about|||REQUIRED|||-NONE-|||0\nA 10 11|||R:VERB:FORM|||cleaning|||REQUIRED|||-NONE-|||0\nA 13 14|||U:CONJ||||||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "U:CONJ"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 5,
+      "target_edit_index": 4,
+      "target_edit_type": "U:CONJ",
+      "random_foil": "There and were some people who gave me some advice about cleaning the face etc.",
+      "random_edit_type": "INS",
+      "random_edit_position": 1,
+      "random_original_token": null,
+      "random_new_token": "and",
+      "random_length_delta": 1,
+      "random_skip_reason": null,
+      "artificial_error": "There are some people who gave me some advice about cleaning the face etc."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Finally, it was a very nice day a great experience.",
+      "sentence_good": "Finally, it was a very nice day and a great experience.",
+      "error_tags": [
+        "R"
+      ],
+      "errant_edits": [
+        {
+          "type": "M:CONJ",
+          "o_start": 8,
+          "o_end": 8,
+          "c_start": 8,
+          "c_end": 9,
+          "o_str": "",
+          "c_str": "and"
+        }
+      ],
+      "errant_m2": "A 8 8|||M:CONJ|||and|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "M:CONJ"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 0,
+      "target_edit_type": "M:CONJ",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions",
+      "artificial_error": "Overall it was a very nice day and a great experience."
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Finwithlly, it was a very nice day and a great experience.",
+      "sentence_good": "Finally, it was a very nice day and a great experience.",
+      "error_tags": [
+        "R"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:OTHER",
+          "o_start": 8,
+          "o_end": 9,
+          "c_start": 9,
+          "c_end": 10,
+          "o_str": "with",
+          "c_str": "a"
+        }
+      ],
+      "errant_m2": "A 8 8|||M:CONJ|||and|||REQUIRED|||-NONE-|||0\nA 8 9|||R:OTHER|||a|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:OTHER"
+      ],
+      "single_edit_derived": true,
+      "original_edit_count": 2,
+      "target_edit_index": 1,
+      "target_edit_type": "R:OTHER",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions"
+    },
+    {
+      "language": "Dutch",
+      "age": "16-20",
+      "candidate_score": "23.0",
+      "question_number": "4",
+      "exam_score": "3.1",
+      "source_filename": "doc2461.xml",
+      "sentence_bad": "Loves",
+      "sentence_good": "Love",
+      "error_tags": [
+        "FN"
+      ],
+      "errant_edits": [
+        {
+          "type": "R:NOUN:NUM",
+          "o_start": 0,
+          "o_end": 1,
+          "c_start": 0,
+          "c_end": 1,
+          "o_str": "Loves",
+          "c_str": "Love"
+        }
+      ],
+      "errant_m2": "A 0 1|||R:NOUN:NUM|||Love|||REQUIRED|||-NONE-|||0",
+      "all_error_types": [
+        "R:NOUN:NUM"
+      ],
+      "single_edit_derived": false,
+      "original_edit_count": 1,
+      "target_edit_index": 0,
+      "target_edit_type": "R:NOUN:NUM",
+      "random_foil": null,
+      "random_edit_type": null,
+      "random_edit_position": null,
+      "random_original_token": null,
+      "random_new_token": null,
+      "random_length_delta": 0,
+      "random_skip_reason": "no_valid_positions"
+    }
+  ],
+  "artificial_generation_stats": {
+    "approach": "high_coverage",
+    "total_pairs": 113,
+    "successful_generations": 62,
+    "success_rate": 0.5486725663716814
+  }
+}
