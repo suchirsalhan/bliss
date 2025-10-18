@@ -1,12 +1,12 @@
 # BLISS Dataset Reconstruction Toolkit
 
-This repository contains the open-source toolkit to reconstruct the BLISS (BLIMP Language Model Improvement with Synthetic Structures) dataset introduced in our paper. Due to data redistribution agreements, we cannot provide the processed dataset directly, but this toolkit allows you to reconstruct it from the original sources.
+This repository contains the open-source toolkit to reconstruct the BLISS dataset introduced in our paper. Due to data redistribution agreements, we cannot provide the processed dataset directly, but this toolkit allows you to reconstruct it from the original sources.
 
 ## Overview
 
 The BLISS dataset consists of grammatical minimal pairs derived from learner corpora, enhanced with artificial grammatical errors for contrastive training. The dataset includes:
 
-- **Write&Improve 2024**: Individual edit minimal pairs (63,926 pairs) and sentence-level pairs (25,307 pairs)
+- **Write&Improve 2024**: Individual edit minimal pairs (63,926 pairs)
 - **EFCamDat**: Multi-language learner corpus with artificial error augmentation
 - **FCE**: Cambridge First Certificate in English corpus with error analysis
 
@@ -48,7 +48,6 @@ python convert_writeandimprove.py /path/to/writeandimprove/data /path/to/output
 
 # This creates:
 # - individual_edits/writeandimprove_{train,dev}_individual_edits.json
-# - sentence_level/writeandimprove_{train,dev}_sentence_level.json
 ```
 
 ### Step 2: Generate Artificial Errors
@@ -181,22 +180,12 @@ CPS         : p = 0.0003 (binomial)
 When reconstructed correctly, you should get:
 
 - **Write&Improve Individual**: ~63,926 minimal pairs with ~27% artificial error success rate
-- **Write&Improve Sentence-level**: ~25,307 minimal pairs
 - **EFCamDat**: Variable by language/proficiency level
 - **FCE**: Variable by first language
 
 ## Citation
 
 If you use this toolkit or the reconstructed dataset, please cite our paper:
-
-```bibtex
-@inproceedings{your-paper-2024,
-  title={[Your Paper Title]},
-  author={[Your Name] and [Co-authors]},
-  booktitle={[Conference]},
-  year={2024}
-}
-```
 
 ## Troubleshooting
 

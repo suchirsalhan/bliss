@@ -229,34 +229,6 @@ def create_individual_minimal_pairs(orig_sent: str, m2_edits: List[M2Edit], spli
     return pairs
 
 
-def create_sentence_level_minimal_pair(orig_sent: str, corr_sent: str, m2_edits: List[M2Edit],
-                                     split: str, pair_id: int, sentence_idx: int, essay_id: str,
-                                     essay_meta: Dict) -> Optional[Dict]:
-    if not is_good_minimal_pair(orig_sent, corr_sent):
-        return None
-
-    error_types = [edit.error_type for edit in m2_edits if not is_noop_edit(edit)]
-    error_type_str = '+'.join(sorted(set(error_types))) if error_types else 'unknown'
-
-    if m2_edits:
-        merged_edit = MergedEdit(
-            start_offset=min(e.start_offset for e in m2_edits),
-            end_offset=max(e.end_offset for e in m2_edits),
-            error_types=error_types,
-            correction=corr_sent,
-            sentence_index=sentence_idx,
-            original_edits=m2_edits
-        )
-    else:
-        merged_edit = None
-
-    return create_blimp_entry(
-        orig_sent, corr_sent, error_type_str,
-        split, pair_id, sentence_idx, essay_id, essay_meta,
-        merged_edit, orig_sent, corr_sent,
-        version="sentence_level"
-    )
-
 
 def create_blimp_entry(sentence_bad: str, sentence_good: str, error_type: str,
                       split: str, pair_id: int, sentence_idx: int, essay_id: str,
@@ -362,9 +334,7 @@ def create_dual_version_minimal_pairs(data_dir: str, split: str, essay_metadata:
         print(f"Parsed M2 file with {len(m2_edits_by_sentence)} sentence entries")
 
     individual_pairs = []
-    sentence_level_pairs = []
     individual_pair_id = 0
-    sentence_pair_id = 0
     sentences_with_changes = 0
 
     for i, orig_sent in enumerate(orig_sentences):
@@ -388,18 +358,10 @@ def create_dual_version_minimal_pairs(data_dir: str, split: str, essay_metadata:
         individual_pairs.extend(individual_sentence_pairs)
         individual_pair_id += len(individual_sentence_pairs)
 
-        sentence_pair = create_sentence_level_minimal_pair(
-            orig_sent, corr_sent, m2_edits, split, sentence_pair_id, i, essay_id, essay_meta
-        )
-        if sentence_pair:
-            sentence_level_pairs.append(sentence_pair)
-            sentence_pair_id += 1
-
     print(f"Processed {sentences_with_changes} sentences with changes")
     print(f"Created {len(individual_pairs)} individual minimal pairs")
-    print(f"Created {len(sentence_level_pairs)} sentence-level minimal pairs")
 
-    return individual_pairs, sentence_level_pairs
+    return individual_pairs
 
 
 def convert_writeandimprove_dataset(data_dir: str, output_dir: str):
@@ -407,16 +369,12 @@ def convert_writeandimprove_dataset(data_dir: str, output_dir: str):
     output_path = Path(output_dir)
 
     individual_output_path = output_path / "individual_edits"
-    sentence_output_path = output_path / "sentence_level"
 
     individual_output_path.mkdir(parents=True, exist_ok=True)
-    sentence_output_path.mkdir(parents=True, exist_ok=True)
 
     print(f"Converting Write&Improve data to BLIMP format...")
     print(f"Input directory: {data_path}")
-    print(f"Output directories:")
-    print(f"  Individual edits: {individual_output_path}")
-    print(f"  Sentence level: {sentence_output_path}")
+    print(f"Output directory: {individual_output_path}")
 
     essay_metadata_path = data_path / "en-writeandimprove2024-final-versions-m2-essay-info.tsv"
     essay_metadata = {}
@@ -428,47 +386,31 @@ def convert_writeandimprove_dataset(data_dir: str, output_dir: str):
         print("No essay metadata file found")
 
     all_individual_data = {}
-    all_sentence_data = {}
 
     for split in ['train', 'dev']:
         print(f"\nProcessing {split} split...")
 
-        individual_pairs, sentence_level_pairs = create_dual_version_minimal_pairs(
+        individual_pairs = create_dual_version_minimal_pairs(
             data_dir, split, essay_metadata
         )
 
-        if not individual_pairs and not sentence_level_pairs:
+        if not individual_pairs:
             print(f"No data found for {split} split")
             continue
 
         all_individual_data[split] = individual_pairs
-        all_sentence_data[split] = sentence_level_pairs
 
-        if individual_pairs:
-            individual_file = individual_output_path / f"writeandimprove_{split}_individual_edits.json"
-            individual_dataset = {
-                "phenomenon": f"writeandimprove_{split}_individual",
-                "description": f"Write&Improve 2024 {split} - Individual edit minimal pairs (with continuous edit merging)",
-                "version": "individual_edits",
-                "pairs": individual_pairs
-            }
+        individual_file = individual_output_path / f"writeandimprove_{split}_individual_edits.json"
+        individual_dataset = {
+            "phenomenon": f"writeandimprove_{split}_individual",
+            "description": f"Write&Improve 2024 {split} - Individual edit minimal pairs (with continuous edit merging)",
+            "version": "individual_edits",
+            "pairs": individual_pairs
+        }
 
-            with open(individual_file, 'w', encoding='utf-8') as f:
-                json.dump(individual_dataset, f, indent=2, ensure_ascii=False)
-            print(f"  Saved {len(individual_pairs)} individual pairs to {individual_file}")
-
-        if sentence_level_pairs:
-            sentence_file = sentence_output_path / f"writeandimprove_{split}_sentence_level.json"
-            sentence_dataset = {
-                "phenomenon": f"writeandimprove_{split}_sentence",
-                "description": f"Write&Improve 2024 {split} - Sentence-level minimal pairs (original vs fully corrected)",
-                "version": "sentence_level",
-                "pairs": sentence_level_pairs
-            }
-
-            with open(sentence_file, 'w', encoding='utf-8') as f:
-                json.dump(sentence_dataset, f, indent=2, ensure_ascii=False)
-            print(f"  Saved {len(sentence_level_pairs)} sentence-level pairs to {sentence_file}")
+        with open(individual_file, 'w', encoding='utf-8') as f:
+            json.dump(individual_dataset, f, indent=2, ensure_ascii=False)
+        print(f"  Saved {len(individual_pairs)} individual pairs to {individual_file}")
 
     if all_individual_data:
         combined_individual = individual_output_path / "writeandimprove_all_individual_edits.json"
@@ -487,27 +429,8 @@ def convert_writeandimprove_dataset(data_dir: str, output_dir: str):
             json.dump(combined_individual_dataset, f, indent=2, ensure_ascii=False)
         print(f"\nSaved combined individual dataset with {len(all_individual_pairs)} pairs")
 
-    if all_sentence_data:
-        combined_sentence = sentence_output_path / "writeandimprove_all_sentence_level.json"
-        all_sentence_pairs = []
-        for split_data in all_sentence_data.values():
-            all_sentence_pairs.extend(split_data)
-
-        combined_sentence_dataset = {
-            "phenomenon": "writeandimprove_sentence",
-            "description": "Write&Improve 2024 - All sentence-level minimal pairs (original vs fully corrected)",
-            "version": "sentence_level",
-            "pairs": all_sentence_pairs
-        }
-
-        with open(combined_sentence, 'w', encoding='utf-8') as f:
-            json.dump(combined_sentence_dataset, f, indent=2, ensure_ascii=False)
-        print(f"Saved combined sentence-level dataset with {len(all_sentence_pairs)} pairs")
-
     print(f"\nConversion complete!")
-    print(f"Generated datasets available at:")
-    print(f"  Individual edits version: {individual_output_path}")
-    print(f"  Sentence level version: {sentence_output_path}")
+    print(f"Generated dataset available at: {individual_output_path}")
 
 
 if __name__ == "__main__":
