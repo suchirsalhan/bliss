@@ -226,7 +226,7 @@ This toolkit is released under [MIT License]. The original datasets maintain the
 
 ## Contact
 
-For questions about the toolkit or dataset reconstruction, please open an issue or contact [your email].
+For questions about the toolkit or dataset reconstruction, please open an issue or contact [sas245@cam.ac.uk].
 
 ---
 
